@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>پرداخت موفق | Dota 2 Rush</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- فونت‌ها -->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/trajan-pro" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <style>
+    :root {
+      --gold: #FFD700;
+      --purple: #6a0dad;
+      --bg-dark: #0c0c0f;
+      --box-dark: #1a1a26;
+      --text: #eee;
+      --glow-gold: 0 0 15px rgba(255, 215, 0, 0.3);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #0c0c0f, #1a1a26);
+      color: var(--text);
+      font-family: 'Tajawal', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .success-box {
+      background: var(--box-dark);
+      border: 1px solid var(--gold);
+      border-radius: 16px;
+      padding: 40px 30px;
+      width: 90%;
+      max-width: 460px;
+      text-align: center;
+      box-shadow: 0 0 40px rgba(255, 215, 0, 0.05);
+      position: relative;
+    }
+
+    .logo {
+      width: 90px;
+      margin-bottom: 15px;
+      filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.4));
+    }
+
+    h1 {
+      font-family: 'Trajan Pro', serif;
+      color: var(--gold);
+      font-size: 22px;
+      margin-bottom: 15px;
+      text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 1.7;
+      margin: 10px 0;
+    }
+
+    .icon-check {
+      font-size: 64px;
+      color: var(--gold);
+      margin-bottom: 15px;
+      text-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+    }
+
+    .tracking-id {
+      background: #11111b;
+      border: 1px dashed var(--gold);
+      color: var(--gold);
+      padding: 12px 15px;
+      font-family: monospace;
+      font-size: 14px;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+
+    .btn {
+      background: linear-gradient(to right, var(--purple), var(--gold));
+      padding: 12px 30px;
+      font-weight: bold;
+      color: #fff;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 15px;
+      display: inline-block;
+      margin-top: 20px;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      box-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
+      transform: translateY(-2px);
+    }
+
+    /* نور درونی subtle */
+    .success-box::before {
+      content: '';
+      position: absolute;
+      top: -30%;
+      left: -30%;
+      width: 160%;
+      height: 160%;
+      background: radial-gradient(circle, rgba(255,215,0,0.05), transparent);
+      z-index: -1;
+      animation: pulse 5s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 0.5; }
+      50% { transform: scale(1.05); opacity: 0.8; }
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 19px; }
+      .icon-check { font-size: 48px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="success-box">
+    <div class="icon-check"><i class="fas fa-check-circle"></i></div>
+    <img src="images/logo.webp" alt="Dota 2 Rush Logo" class="logo">
+    <h1>پرداخت با موفقیت انجام شد</h1>
+    <p>سفارش شما با موفقیت ثبت شد و در صف پردازش قرار گرفت.</p>
+    <p>پشتیبانی به زودی با شما تماس خواهد گرفت.</p>
+
+    <div class="tracking-id">Tracking ID: <strong>#D2R-AR2397</strong></div>
+
+    <a href="index.html" class="btn"><i class="fas fa-home"></i> بازگشت به خانه</a>
+  </div>
+</body>
+</html>

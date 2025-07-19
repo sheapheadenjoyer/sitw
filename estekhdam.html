@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="fa">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<meta content="فرم استخدام بوسترهای حرفه‌ای Dota 2 با رعایت قوانین جمهوری اسلامی ایران" name="description"/>
+<meta content="استخدام بوستر, Dota 2, همکاری, MMR boosting" name="keywords"/>
+<title>Dota 2 Rush | همکاری با ما - استخدام بوستر</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.cdnfonts.com/css/trajan-pro" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+    :root {
+      --primary-color: #FFD700;
+      --secondary-color: #1A2A3A;
+      --text-color: #FFFFFF;
+      --text-secondary: #AAAAAA;
+      --bg-dark: rgba(0,0,0,0.7);
+      --bg-light: rgba(255,255,255,0.1);
+      --border-radius: 8px;
+      --box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      --transition: all 0.3s ease-in-out;
+      --error-color: #ff4444;
+      --success-color: #00C851;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Tajawal', sans-serif;
+      background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), 
+                  url('https://uploadkon.ir/uploads/5d1008_25wp9355689-dota-2-desktop-4k-wallpapers-impy.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: var(--text-color);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      text-shadow: 1px 1px 3px #000;
+    }
+    
+    .header {
+      background: linear-gradient(135deg, rgba(26,42,58,0.95) 0%, rgba(57,84,97,0.9) 100%);
+      padding: 1.5rem;
+      border-bottom: 3px solid var(--primary-color);
+      position: relative;
+      z-index: 10;
+    }
+    
+    .back-link {
+      position: absolute;
+      left: 1.5rem;
+      top: 1.5rem;
+      color: var(--primary-color);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 500;
+      transition: var(--transition);
+      padding: 0.5rem 1rem;
+      border-radius: 25px;
+      border: 1px solid var(--primary-color);
+      background: rgba(255,215,0,0.1);
+    }
+    
+    .back-link:hover {
+      background: rgba(255,215,0,0.2);
+      transform: translateY(-2px);
+    }
+    
+    .logo-title-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .logo {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 2px solid var(--primary-color);
+      box-shadow: 0 0 15px rgba(255,215,0,0.7);
+      transition: var(--transition);
+    }
+    
+    .logo:hover {
+      transform: rotate(15deg);
+    }
+    
+    h1 {
+      font-family: 'Trajan Pro', serif;
+      font-size: 2.5rem;
+      color: var(--primary-color);
+      text-shadow: 0 0 15px rgba(255,215,0,0.7);
+      letter-spacing: 1px;
+    }
+    
+    h2 {
+      color: var(--primary-color);
+      margin: 1.5rem 0;
+      font-size: 1.8rem;
+      border-right: 3px solid var(--primary-color);
+      padding-right: 1rem;
+      position: relative;
+    }
+    
+    h3 {
+      color: var(--primary-color);
+      margin: 1rem 0;
+      font-size: 1.4rem;
+    }
+    
+    .main {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+      flex: 1;
+    }
+    
+    .join-us-container {
+      background: rgba(0,0,0,0.6);
+      border-radius: var(--border-radius);
+      padding: 2rem;
+      border: 1px solid var(--primary-color);
+      box-shadow: var(--box-shadow);
+      margin-bottom: 3rem;
+    }
+    
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: var(--primary-color);
+      font-weight: 500;
+    }
+    
+    input, select, textarea {
+      width: 100%;
+      padding: 0.8rem;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid var(--primary-color);
+      border-radius: var(--border-radius);
+      color: var(--text-color);
+      font-family: 'Tajawal', sans-serif;
+      transition: var(--transition);
+    }
+    
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: #ffc800;
+      box-shadow: 0 0 10px rgba(255,215,0,0.5);
+    }
+    
+    .form-row {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .form-col {
+      flex: 1;
+    }
+    
+    /* استایل جدید برای انتخاب نقش‌ها */
+    .roles-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+    
+    .role-option {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.8rem;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid var(--primary-color);
+      border-radius: var(--border-radius);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    
+    .role-option:hover {
+      background: rgba(255,215,0,0.1);
+    }
+    
+    .role-option input {
+      width: auto;
+      margin: 0;
+    }
+    
+    .role-option.selected {
+      background: rgba(255,215,0,0.2);
+      border-color: #ffc800;
+    }
+    
+    /* استایل جدید برای انتخاب سال تولد */
+    .birth-year-selector {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    
+    .birth-year-selector select {
+      flex: 1;
+    }
+    
+    .birth-year-selector span {
+      white-space: nowrap;
+    }
+    
+    .agreement-container {
+      background: rgba(0,0,0,0.4);
+      padding: 1.5rem;
+      border-radius: var(--border-radius);
+      border: 1px solid #444;
+      margin: 2rem 0;
+    }
+    
+    .agreement-item {
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.8rem;
+    }
+    
+    .agreement-item input {
+      width: auto;
+      margin-top: 0.3rem;
+    }
+    
+    .agreement-text {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+    
+    .agreement-text strong {
+      color: var(--primary-color);
+    }
+    
+    .submit-btn {
+      background: var(--primary-color);
+      color: #000;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: var(--border-radius);
+      font-weight: 700;
+      cursor: pointer;
+      transition: var(--transition);
+      display: block;
+      width: 100%;
+      font-size: 1.1rem;
+      font-family: 'Tajawal', sans-serif;
+    }
+    
+    .submit-btn:hover {
+      background: #ffc800;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(255,215,0,0.3);
+    }
+    
+    .submit-btn:disabled {
+      background: #666;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+    
+    .validation-error {
+      color: var(--error-color);
+      font-size: 0.8rem;
+      margin-top: 0.3rem;
+      display: none;
+    }
+    
+    .success-message {
+      background: rgba(0,200,81,0.2);
+      border: 1px solid var(--success-color);
+      padding: 1.5rem;
+      border-radius: var(--border-radius);
+      text-align: center;
+      margin-bottom: 2rem;
+      display: none;
+    }
+    
+    .success-message i {
+      color: var(--success-color);
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    
+    .footer {
+      background: rgba(0,0,0,0.8);
+      padding: 2rem;
+      text-align: center;
+      border-top: 1px solid #444;
+      margin-top: auto;
+    }
+    
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin: 1rem 0;
+    }
+    
+    .social-link {
+      color: var(--text-color);
+      font-size: 1.5rem;
+      transition: var(--transition);
+    }
+    
+    .social-link:hover {
+      color: var(--primary-color);
+      transform: translateY(-3px);
+    }
+    
+    .copyright {
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+    
+    @media (max-width: 768px) {
+      .form-row {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      
+      .roles-container {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      }
+      
+      h1 {
+        font-size: 2rem;
+      }
+      
+      .logo {
+        width: 60px;
+        height: 60px;
+      }
+      
+      .back-link {
+        position: static;
+        margin-bottom: 1rem;
+        display: inline-flex;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .main {
+        padding: 1rem;
+      }
+      
+      .join-us-container {
+        padding: 1.5rem;
+      }
+      
+      .roles-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+<header class="header">
+<a class="back-link" href="/">
+<i class="fas fa-arrow-right"></i> بازگشت به صفحه اصلی
+    </a>
+<div class="logo-title-container">
+<img alt="Dota 2 Rush Logo" class="logo" loading="lazy" src="https://i.postimg.cc/XrjG7tdD/logo.png"/>
+<h1>DOTA 2 RUSH</h1>
+</div>
+<h2 style="text-align: center; border-right: none;">فرم استخدام بوستر حرفه‌ای</h2>
+</header>
+<main class="main">
+<div class="success-message" id="successMessage">
+<i class="fas fa-check-circle"></i>
+<h3>درخواست شما با موفقیت ثبت شد!</h3>
+<p>پس از بررسی اطلاعات، با شما تماس خواهیم گرفت.</p>
+</div>
+<form class="join-us-container" id="boosterApplicationForm">
+<h3><i class="fas fa-user-tie"></i> اطلاعات شخصی</h3>
+<div class="form-row">
+<div class="form-col">
+<div class="form-group">
+<label for="fullName">نام و نام خانوادگی *</label>
+<input id="fullName" name="fullName" required="" type="text"/>
+<div class="validation-error" id="fullNameError">لطفاً نام و نام خانوادگی خود را وارد کنید</div>
+</div>
+</div>
+<div class="form-col">
+<div class="form-group">
+<label for="nationalCode">کد ملی *</label>
+<input id="nationalCode" maxlength="10" name="nationalCode" pattern="\d{10}" required="" type="text"/>
+<div class="validation-error" id="nationalCodeError">لطفاً کد ملی معتبر وارد کنید (10 رقم)</div>
+</div>
+</div>
+</div>
+<div class="form-row">
+<div class="form-col">
+<div class="form-group">
+<label for="birthYear">سال تولد *</label>
+<div class="birth-year-selector">
+<select id="birthYear" name="birthYear" required="">
+<option value="">انتخاب کنید</option>
+<!-- سال‌ها توسط جاوااسکریپت تولید می‌شوند -->
+</select>
+<span>هجری شمسی</span>
+</div>
+<div class="validation-error" id="birthYearError">لطفاً سال تولد خود را انتخاب کنید</div>
+</div>
+</div>
+<div class="form-col">
+<div class="form-group">
+<label for="phoneNumber">شماره تماس *</label>
+<input id="phoneNumber" name="phoneNumber" pattern="09\d{9}" required="" type="tel"/>
+<div class="validation-error" id="phoneError">لطفاً شماره تماس معتبر وارد کنید (مثال: 09123456789)</div>
+</div>
+</div>
+</div>
+<div class="form-group">
+<label for="email">ایمیل (اختیاری)</label>
+<input id="email" name="email" type="email"/>
+</div>
+<h3><i class="fas fa-gamepad"></i> اطلاعات بازی</h3>
+<div class="form-row">
+<div class="form-col">
+<div class="form-group">
+<label for="steamId">آیدی استیم (SteamID64) *</label>
+<input id="steamId" name="steamId" required="" type="text"/>
+<div class="validation-error" id="steamIdError">لطفاً آیدی استیم خود را وارد کنید</div>
+</div>
+</div>
+<div class="form-col">
+<div class="form-group">
+<label for="currentMMR">MMR فعلی *</label>
+<input id="currentMMR" max="12000" min="1000" name="currentMMR" required="" type="number"/>
+<div class="validation-error" id="mmrError">لطفاً MMR معتبر وارد کنید (بین 1000 تا 12000)</div>
+</div>
+</div>
+</div>
+<div class="form-group">
+<label>نقش‌های اصلی *</label>
+<div class="roles-container" id="rolesContainer">
+<!-- نقش‌ها توسط جاوااسکریپت تولید می‌شوند -->
+</div>
+<div class="validation-error" id="rolesError">لطفاً حداقل یک نقش اصلی انتخاب کنید</div>
+</div>
+<div class="form-group">
+<label for="experience">سابقه بازی (به سال) *</label>
+<input id="experience" max="20" min="1" name="experience" required="" type="number"/>
+<div class="validation-error" id="experienceError">لطفاً سابقه بازی خود را وارد کنید</div>
+</div>
+<div class="form-group">
+<label for="aboutYou">درباره خود و سابقه بوست (اختیاری)</label>
+<textarea id="aboutYou" name="aboutYou" rows="4"></textarea>
+</div>
+<h3><i class="fas fa-file-signature"></i> توافق‌نامه و قوانین</h3>
+<div class="agreement-container">
+<div class="agreement-item">
+<input id="agreement1" name="agreement1" required="" type="checkbox"/>
+<span class="agreement-text">
+<strong>تعهد به رعایت قوانین جمهوری اسلامی ایران:</strong> متعهد می‌شوم کلیه قوانین جاری جمهوری اسلامی ایران را رعایت نموده و محتوای غیراخلاقی یا خلاف شرع در حین بازی منتشر نکنم.
+          </span>
+</div>
+<div class="agreement-item">
+<input id="agreement2" name="agreement2" required="" type="checkbox"/>
+<span class="agreement-text">
+<strong>مسئولیت خسارات:</strong> متعهد می‌شوم در صورت ایجاد هرگونه مشکل برای اکانت مشتری در حین بوست (شامل بن، کاهش MMR، کاهش Behavior Score یا هرگونه آسیب دیگر)، کلیه خسارات وارده را جبران نمایم.
+          </span>
+</div>
+<div class="agreement-item">
+<input id="agreement3" name="agreement3" required="" type="checkbox"/>
+<span class="agreement-text">
+<strong>محرمانگی اطلاعات:</strong> متعهد می‌شوم اطلاعات مشتریان (شامل آیدی استیم، اطلاعات حساب و سایر اطلاعات شخصی) را محرمانه نگه داشته و در اختیار شخص ثالث قرار ندهم.
+          </span>
+</div>
+<div class="agreement-item">
+<input id="agreement4" name="agreement4" required="" type="checkbox"/>
+<span class="agreement-text">
+<strong>تعهد به زمانبندی:</strong> متعهد می‌شوم طبق زمانبندی توافق شده عمل کرده و در صورت تأخیر غیرموجه، جریمه‌های تعیین شده را بپذیرم.
+          </span>
+</div>
+<div class="agreement-item">
+<input id="agreement5" name="agreement5" required="" type="checkbox"/>
+<span class="agreement-text">
+<strong>تأیید صحت اطلاعات:</strong> تأیید می‌کنم کلیه اطلاعات ارائه شده در این فرم صحیح بوده و در صورت عدم صحت، مسئولیت حقوقی آن را می‌پذیرم.
+          </span>
+</div>
+</div>
+<div class="form-group">
+<div class="validation-error" id="agreementError">لطفاً تمامی موارد توافق‌نامه را مطالعه و تیک بزنید</div>
+</div>
+<button class="submit-btn" id="submitBtn" type="submit">
+<i class="fas fa-paper-plane"></i> ارسال درخواست
+      </button>
+</form>
+</main>
+<footer class="footer">
+<div class="social-links">
+<a class="social-link" href="#"><i class="fab fa-telegram"></i></a>
+<a class="social-link" href="#"><i class="fab fa-instagram"></i></a>
+<a class="social-link" href="#"><i class="fab fa-discord"></i></a>
+<a class="social-link" href="#"><i class="fab fa-steam"></i></a>
+</div>
+<p class="copyright">
+      © 2023 Dota 2 Rush | تمامی حقوق محفوظ است
+    </p>
+</footer>
+<script>
+    // ماژول اصلی برنامه
+    const Dota2RushBoosterApplication = (function() {
+      // تنظیمات برنامه
+      const config = {
+        minBirthYear: 1360,
+        maxBirthYear: 1385,
+        roles: [
+          { id: 'carry', name: 'Carry', icon: 'fas fa-swords' },
+          { id: 'mid', name: 'Mid', icon: 'fas fa-bolt' },
+          { id: 'offlane', name: 'Offlane', icon: 'fas fa-shield' },
+          { id: 'support', name: 'Support (4)', icon: 'fas fa-hand-holding-heart' },
+          { id: 'hard_support', name: 'Hard Support (5)', icon: 'fas fa-hands-helping' }
+        ]
+      };
+      
+      // عناصر DOM
+      const dom = {
+        form: document.getElementById('boosterApplicationForm'),
+        successMessage: document.getElementById('successMessage'),
+        submitBtn: document.getElementById('submitBtn'),
+        birthYearSelect: document.getElementById('birthYear'),
+        rolesContainer: document.getElementById('rolesContainer')
+      };
+      
+      // مقداردهی اولیه فرم
+      function initForm() {
+        populateBirthYears();
+        populateRoles();
+        setupEventListeners();
+      }
+      
+      // پر کردن سال‌های تولد
+      function populateBirthYears() {
+        let options = '';
+        for (let year = config.maxBirthYear; year >= config.minBirthYear; year--) {
+          options += `<option value="${year}">${year}</option>`;
+        }
+        dom.birthYearSelect.innerHTML += options;
+      }
+      
+      // پر کردن نقش‌ها
+      function populateRoles() {
+        let rolesHtml = '';
+        config.roles.forEach(role => {
+          rolesHtml += `
+            <label class="role-option">
+              <input type="checkbox" name="mainRoles" value="${role.id}" class="role-checkbox">
+              <i class="${role.icon}"></i>
+              <span>${role.name}</span>
+            </label>
+          `;
+        });
+        dom.rolesContainer.innerHTML = rolesHtml;
+        
+        // اضافه کردن event listener برای تغییر استایل هنگام انتخاب
+        document.querySelectorAll('.role-option').forEach(option => {
+          option.addEventListener('click', function(e) {
+            if (e.target.tagName !== 'INPUT') {
+              const checkbox = this.querySelector('input');
+              checkbox.checked = !checkbox.checked;
+              this.classList.toggle('selected', checkbox.checked);
+              document.getElementById('rolesError').style.display = 'none';
+            }
+          });
+        });
+      }
+      
+      // تنظیم event listeners
+      function setupEventListeners() {
+        dom.form.addEventListener('submit', handleFormSubmit);
+        
+        // اعتبارسنجی هنگام تایپ
+        const inputs = dom.form.querySelectorAll('input, select, textarea');
+        inputs.forEach(input => {
+          input.addEventListener('input', function() {
+            const errorElement = document.getElementById(`${this.id}Error`);
+            if (errorElement) {
+              errorElement.style.display = 'none';
+            }
+          });
+        });
+        
+        // برای چک‌باکس‌ها
+        const checkboxes = dom.form.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach(checkbox => {
+          checkbox.addEventListener('change', function() {
+            if (this.name === 'mainRoles') {
+              const roleOption = this.closest('.role-option');
+              roleOption.classList.toggle('selected', this.checked);
+            }
+            document.getElementById('agreementError').style.display = 'none';
+          });
+        });
+      }
+      
+      // مدیریت ارسال فرم
+      function handleFormSubmit(e) {
+        e.preventDefault();
+        
+        if (validateForm()) {
+          submitForm();
+        }
+      }
+      
+      // اعتبارسنجی فرم
+      function validateForm() {
+        let isValid = true;
+        
+        // اعتبارسنجی نام کامل
+        if (!dom.form.fullName.value.trim()) {
+          document.getElementById('fullNameError').style.display = 'block';
+          isValid = false;
+        }
+        
+        // اعتبارسنجی کد ملی
+        if (!dom.form.nationalCode.value.match(/^\d{10}$/)) {
+          document.getElementById('nationalCodeError').style.display = 'block';
+          isValid = false;
+        }
+        
+        // اعتبارسنجی سال تولد
+        if (!dom.form.birthYear.value) {
+          document.getElementById('birthYearError').style.display = 'block';
+          isValid = false;
+        }
+        
+        // اعتبارسنجی شماره تماس
+        if (!dom.form.phoneNumber.value.match(/^09\d{9}$/)) {
+          document.getElementById('phoneError').style.display = 'block';
+          isValid = false;
+        }
+        
+        // اعتبارسنجی آیدی استیم
+        if (!dom.form.steamId.value.trim()) {
+          document.getElementById('steamIdError').style.display = 'block';
+          isValid = false;
+        }
+        
+        // اعتبارسنجی MMR
+        if (!dom.form.currentMMR.value || dom.form.currentMMR.value < 1000 || dom.form.currentMMR.value > 12000) {
+          document.getElementById('mmrError').style.display = 'block';
+          isValid = false;
+        }
+        
+        // اعتبارسنجی نقش‌ها
+        const selectedRoles = dom.form.querySelectorAll('input[name="mainRoles"]:checked');
+        if (selectedRoles.length === 0) {
+          document.getElementById('rolesError').style.display = 'block';
+          isValid = false;
+        }
+        
+        // اعتبارسنجی سابقه بازی
+        if (!dom.form.experience.value || dom.form.experience.value < 1 || dom.form.experience.value > 20) {
+          document.getElementById('experienceError').style.display = 'block';
+          isValid = false;
+        }
+        
+        // اعتبارسنجی توافق‌نامه
+        const allAgreementsChecked = 
+          dom.form.agreement1.checked && 
+          dom.form.agreement2.checked && 
+          dom.form.agreement3.checked && 
+          dom.form.agreement4.checked && 
+          dom.form.agreement5.checked;
+        
+        if (!allAgreementsChecked) {
+          document.getElementById('agreementError').style.display = 'block';
+          isValid = false;
+        }
+        
+        return isValid;
+      }
+      
+      // ارسال فرم (شبیه‌سازی)
+      function submitForm() {
+        dom.submitBtn.disabled = true;
+        dom.submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> در حال ارسال...';
+        
+        // در یک برنامه واقعی، اینجا درخواست AJAX به سرور ارسال می‌شود
+        setTimeout(() => {
+          dom.form.style.display = 'none';
+          dom.successMessage.style.display = 'block';
+          dom.successMessage.scrollIntoView({ behavior: 'smooth' });
+          
+          // بازنشانی فرم پس از 5 ثانیه (برای دمو)
+          setTimeout(() => {
+            dom.form.reset();
+            document.querySelectorAll('.role-option').forEach(option => {
+              option.classList.remove('selected');
+            });
+            dom.form.style.display = 'block';
+            dom.successMessage.style.display = 'none';
+            dom.submitBtn.disabled = false;
+            dom.submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> ارسال درخواست';
+          }, 5000);
+        }, 1500);
+      }
+      
+      // API عمومی
+      return {
+        init: initForm
+      };
+    })();
+    
+    // مقداردهی اولیه برنامه هنگام لود صفحه
+    document.addEventListener('DOMContentLoaded', function() {
+      Dota2RushBoosterApplication.init();
+    });
+  </script>
+</body>
+</html>
